@@ -79,6 +79,14 @@ main {
   gap: 0; /* Elimina el gap */
   margin-top: 0; /* Elimina el margin */
 }
+@media (max-width: 767px) {
+  .header-top img, .header-top div:last-child {
+    display: none;
+  }
+  .header-mid {
+    flex-basis: 100%;
+  }
+}
 @media (min-width: 768px) {
   main {
     grid-template-columns: repeat(2, 1fr);

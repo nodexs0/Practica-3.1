@@ -28,8 +28,11 @@ header {
 }
 
 .header-top img {
-  height: 48px;
-  flex-basis: 15%;
+  height: 10%;
+  width: 10%; /* Añade esta línea para que la imagen sea cuadrada */
+  object-fit: cover; /* Asegura que la imagen se ajuste bien dentro del contenedor cuadrado */
+  flex-basis: 10%;
+  margin: auto;
 }
 
 .header-mid {
@@ -55,6 +58,7 @@ header {
   font-weight: bold;
   margin: 8px 0;
 }
+
 .header-subtitle {
   font-size: 1.25rem;
 }
@@ -94,10 +98,16 @@ main {
     border-left: none;
     border-right: none;
   }
+  nav a {
+    font-size: 0.875rem;
+  }
 }
 @media (min-width: 768px) {
   main {
     grid-template-columns: repeat(2, 1fr);
+  }
+  .header-top div:last-child p {
+    font-size: 0.875rem;
   }
 }
 @media (min-width: 1024px) {
@@ -115,6 +125,7 @@ main {
 .card img {
   margin-top: 8px;
   max-width: 100%;
+  margin-bottom: 16px;
 }
 .card h2 {
   font-size: 1.25rem;
